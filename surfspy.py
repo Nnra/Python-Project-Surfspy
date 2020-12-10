@@ -317,7 +317,7 @@ df_weather.plot.box(y='windDirection.noaa', title='Wind Direction (0 degree nort
                     meanprops = {'marker':'D','markerfacecolor':'indianred'},
                     medianprops = {'linestyle':'--','color':'orange'})
 plt.yticks([24,48,72,96,120,144,168,192,216,240,264,288,312,336,360],
-           ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"])
+           ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW"])
 
 
 #wind direction
@@ -325,7 +325,7 @@ plt.plot(df_weather["windDirection.noaa"])
 plt.ylabel("Wind Direction (0 degree north)");
 plt.xlabel("time")
 plt.yticks([24,48,72,96,120,144,168,192,216,240,264,288,312,336,360],
-           ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"])
+           ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW"])
 #plt.title()
 fig1 = plt.gcf()
 plt.show()
