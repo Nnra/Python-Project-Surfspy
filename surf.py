@@ -1,6 +1,8 @@
+
 # pip install -- arrow
 # pip install --user pandas==1.0.3
 # pip install windrose
+# pip install tides
 import numpy as np
 import pandas as pd
 import json
@@ -9,6 +11,11 @@ from tides import tideScraper, tideCalculator
 from pandas.io.json import json_normalize
 import arrow ##*****************need to update to install package.
 import requests
+import sys
+
+if not sys.warnoptions:
+    import warnings
+    warnings.simplefilter("ignore")
 
 '''
 data = []
@@ -132,7 +139,7 @@ state = df10.loc[df10['location_name'] == loc]['state'].values[0]
 date = now.strftime('%d-%m-%y')
 
 ##############################  Parameters  ###################################
-
+# Weather Data
 # Get first hour of today
 start = arrow.now().floor('day')
 
@@ -150,9 +157,13 @@ response = requests.get(
     'end': end.to('UTC').timestamp  # Convert to UTC timestamp
   },
   headers={
-    'Authorization': '1eb723a6-2805-11eb-8ea5-0242ac130002-1eb7248c-2805-11eb-8ea5-0242ac130002'
+    'Authorization': '0fe486ac-3acf-11eb-93d6-0242ac130002-0fe4872e-3acf-11eb-93d6-0242ac130002'
   }
 )
+
+# key3: 0fe486ac-3acf-11eb-93d6-0242ac130002-0fe4872e-3acf-11eb-93d6-0242ac130002
+# key2: 684468aa-3ab9-11eb-9d20-0242ac130002-68446922-3ab9-11eb-9d20-0242ac130002
+# key1: '1eb723a6-2805-11eb-8ea5-0242ac130002-1eb7248c-2805-11eb-8ea5-0242ac130002'
 
 # Do something with response data.
 weather_data = response.json()
@@ -184,9 +195,13 @@ response = requests.get(
     'end': end.to('UTC').timestamp,  # Convert to UTC timestam
   },
   headers={
-    'Authorization': '1eb723a6-2805-11eb-8ea5-0242ac130002-1eb7248c-2805-11eb-8ea5-0242ac130002'
+    'Authorization': '0fe486ac-3acf-11eb-93d6-0242ac130002-0fe4872e-3acf-11eb-93d6-0242ac130002'
   }
 )
+
+# key3: 0fe486ac-3acf-11eb-93d6-0242ac130002-0fe4872e-3acf-11eb-93d6-0242ac130002
+# key2: 684468aa-3ab9-11eb-9d20-0242ac130002-68446922-3ab9-11eb-9d20-0242ac130002
+# key1: '1eb723a6-2805-11eb-8ea5-0242ac130002-1eb7248c-2805-11eb-8ea5-0242ac130002'
 
 # Do something with response data.
 extremeTide_data_all = response.json()
@@ -215,9 +230,13 @@ response = requests.get(
     'end': end.to('UTC').timestamp,  # Convert to UTC timestam
   },
   headers={
-    'Authorization': '1eb723a6-2805-11eb-8ea5-0242ac130002-1eb7248c-2805-11eb-8ea5-0242ac130002'
+    'Authorization': '0fe486ac-3acf-11eb-93d6-0242ac130002-0fe4872e-3acf-11eb-93d6-0242ac130002'
   }
 )
+
+# key3: 0fe486ac-3acf-11eb-93d6-0242ac130002-0fe4872e-3acf-11eb-93d6-0242ac130002
+# key2: 684468aa-3ab9-11eb-9d20-0242ac130002-68446922-3ab9-11eb-9d20-0242ac130002
+# key1: '1eb723a6-2805-11eb-8ea5-0242ac130002-1eb7248c-2805-11eb-8ea5-0242ac130002'
 
 # Do something with response data.
 seaLevel_data_all = response.json()
@@ -252,24 +271,29 @@ ax.set(xlabel="hour",
        title="Hourly airTemperature (celsius)")
 
 plt.show()
+fig.savefig('airTemperature_{loc}_{date}.png'.format(loc=loc,date=date))
 
 df_weather
 df_weather.columns
 
-if("secondarySwellHeight.noaa" in df_weather):
-    df_weather["secondarySwellHeight.noaa"].plot(title='secondary Swell Height (meters)')
+df_weather["hour"] = df_weather.time.str[11:13]
+
+if("swellHeight.noaa" in df_weather):
+    df_weather["swellHeight.noaa"].plot(title='Swell Height (meters)')
 else:
     print("No available data for secondary swell for " + loc + "from stormglass API.")
     
 if("swellDirection.noaa" in df_weather):
     df_weather.plot(kind='bar', y='swellDirection.noaa', x='hour', title='Swell Direction (0°north)')
     plt.show()
+    plt.savefig('swellDirection_{loc}_{date}.png'.format(loc=loc,date=date))
 else:
     print("No available data for swell direction for " + loc + "from stormglass API.")
     
 if("swellPeriod.noaa" in df_weather):
     df_weather.plot(kind='barh', y='swellPeriod.noaa', x='hour', title='Swell Period (seconds)')
     plt.show()
+    plt.savefig('swellPeriod_{loc}_{date}.png'.format(loc=loc,date=date))
 else:
     print("No available data for swell period for " + loc + "from stormglass API.")
     
@@ -286,13 +310,14 @@ df_weather.plot.box(y='windDirection.noaa', title='Wind Direction (0°north)',
                     medianprops = {'linestyle':'--','color':'orange'})
 plt.yticks([24,48,72,96,120,144,168,192,216,240,264,288,312,336,360],
            ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"])
+fig1 = plt.gcf()
 plt.show()
-
+fig1.savefig('WindDirection_{loc}_{date}.png'.format(loc=loc,date=date))
 
 #wind direction
 plt.plot(df_weather["windDirection.noaa"])
 plt.ylabel("Wind Direction (0°north)");
-plt.xlabel("hour")
+plt.xlabel("time")
 plt.yticks([24,48,72,96,120,144,168,192,216,240,264,288,312,336,360],
            ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"])
 
@@ -304,7 +329,7 @@ area = 200 * 100**2
 
 fig = plt.figure()
 ax = fig.add_subplot(111, projection='polar')
-c = ax.scatter(df_weather["windDirection.noaa"], df_weather["time"], cmap='hsv', alpha=0.75)
+c = ax.scatter(df_weather["windDirection.noaa"], df_weather["time"].str[11:13], cmap='hsv', alpha=0.75)
 
 
 from windrose import WindroseAxes
@@ -319,6 +344,9 @@ ax.set_title(title,fontsize=15,loc='center')
 ax.set_legend()
  
 plt.show()
+fig1 = plt.gcf()
+fig1.savefig('WindRose_{loc}_{date}.png'.format(loc=loc,date=date))
+
 
 df_cords = df10[['location_name','Long', 'Lat']]
 df_cords.head()
@@ -338,6 +366,8 @@ fig.update_layout(
         geo_scope='world',
     )
 fig.show()
+fig1 = plt.gcf()
+fig1.savefig('map_{loc}_{date}.png'.format(loc=loc,date=date))
 
 ############## Getting Tides Data and Plot ################3
 tideScraper(loc, state, lat, long, date)
