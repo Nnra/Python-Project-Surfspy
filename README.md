@@ -150,31 +150,31 @@ As for the current accomplishment, the project has accomplished:
 
 > 5. Since the primary principle of our project is user-friendly, clear data visualization must be made. <u>*Scatter Plot*</u>, <u>*Line Graph*</u>, <u>*Bar Graph*</u>, <u>*Horizontal Bar Graph*</u>, <u>*Box Plot*</u>, <u>*Windrose*</u>  and <u>*Interactive Map Plot*</u> has been  utilized to display data neatly. The interactive one is screenshooted since it is animated. 
 >
->    ![airtemperature_crowdy_head_10-12-20](E:\95888\project\airtemperature_crowdy_head_10-12-20.png)
+>    ![airtemperature_crowdy_head_10-12-20](./outputs/airtemperature_crowdy_head_10-12-20.png)
 >
 >    
 >
->    ![windspeed_crowdy_head_10-12-20_360](E:\95888\project\windspeed_crowdy_head_10-12-20_360.png)
+>    ![windspeed_crowdy_head_10-12-20_360](./outputs/windspeed_crowdy_head_10-12-20_360.png)
 >
 >    
 >
->    ![winddirection_crowdy_head_10-12-20](E:\95888\project\winddirection_crowdy_head_10-12-20.png)
+>    ![winddirection_crowdy_head_10-12-20](./outputs/winddirection_crowdy_head_10-12-20.png)
 >
 >    
 >
->    ![windrose_crowdy_head_10-12-20](E:\95888\project\windrose_crowdy_head_10-12-20.png)
+>    ![windrose_crowdy_head_10-12-20](./outputs/windrose_crowdy_head_10-12-20.png)
 >
 >    
 >
->    ![swellperiod_crowdy_head_10-12-20](E:\95888\project\swellperiod_crowdy_head_10-12-20.png)
+>    ![swellperiod_crowdy_head_10-12-20](./outputs/swellperiod_crowdy_head_10-12-20.png)
 >
 >    
 >
->    ![tides_crowdy_head_10-12-20](E:\95888\project\tides_crowdy_head_10-12-20.png)
+>    ![tides_crowdy_head_10-12-20](./outputs/tides_crowdy_head_10-12-20.png)
 >
 >    
 >
->    ![screen_shot_2020-12-10_at_10.20.06_pm](E:\95888\project\screen_shot_2020-12-10_at_10.20.06_pm.png)
+>    ![screen_shot_2020-12-10_at_10.20.06_pm](.\outputs\screen_shot_2020-12-10_at_10.20.06_pm.png)
 
 > 6. The methodology of choosing sample locations is to download rating data from [Firebase](https://firebase.google.com/?gclid=EAIaIQobChMIs4yahanD7QIV9cEWBR0IHA_pEAAYASAAEgLNT_D_BwE) 
 
