@@ -1,0 +1,74 @@
+location_id,location_name,state,url_name,Lat,Long
+NSW_TP009,Ballina,NSW,nsw-ballina,-32.8428,151.3803
+NSW_TP010,Bermagui,NSW,nsw-bermagui,-32.165,150.9011
+NSW_TP001,Botany Bay,NSW,nsw-botany-bay,-24.2125,151.9032
+NSW_TP037,Broughton I.,NSW,nsw-broughton-i,-20.2744,148.715
+NSW_TP016,Brunswick Heads,NSW,nsw-brunswick-heads,-36.0806,146.9158
+NSW_TP038,Camden Haven,NSW,nsw-camden-haven,-37.1917,145.71
+NSW_TP011,Camp Cove,NSW,nsw-camp-cove,-23.7,133.8667
+NSW_TP012,Coffs Harbour,NSW,nsw-coffs-harbour,-38.3861,142.593
+NSW_TP027,Crookhaven Heads,NSW,nsw-crookhaven-heads,-19.4239,146.946
+NSW_TP017,Crowdy Head,NSW,nsw-crowdy-head,-21.0931,149.186
+NSW_TP034,Dangar I.,NSW,nsw-dangar-i,-38.4064,144.1869
+NSW_TP002,Eden,NSW,nsw-eden,-32.7817,152.0844
+NSW_TP035,Ettalong,NSW,nsw-ettalong,-30.5,151.65
+NSW_TP013,Evans Head,NSW,nsw-evans-head,-36.9,145.233
+NSW_TP018,Forster,NSW,nsw-forster,-17.345,145.925
+NSW_TP036,Gosford,NSW,nsw-gosford,-37.7,145.5167
+NSW_TP019,Harrington Inlet,NSW,nsw-harrington-inlet,-37.8333,147.6167
+NSW_TP031,Huskisson,NSW,nsw-huskisson,-34.149,138.4145
+NSW_TP014,Jervis Bay,NSW,nsw-jervis-bay,-10.8833,142.3833
+NSW_TP029,Kingscliff,NSW,nsw-kingscliff,-28.2225,153.5386
+NSW_TP033,Ku-Ring-Gai Y.C.,NSW,nsw-ku-ring-gai-yc,-24.8205,152.4625
+NSW_TP003,Lord Howe Island,NSW,nsw-lord-howe-island,-35.5806,144.195
+NSW_TP030,Moruya,NSW,nsw-moruya,-38.25,144.5167
+NSW_TP004,Newcastle,NSW,nsw-newcastle,-35.7317,150.2011
+NSW_TP039,Nw Solitary I.,NSW,nsw-nw-solitary-i,-35.515,148.1344
+NSW_TP020,Patonga,NSW,nsw-patonga,-41.2,146.8
+NSW_TP021,Port Hacking,NSW,nsw-port-hacking,-27.988000000000003,152.9958
+NSW_TP006,Port Kembla,NSW,nsw-port-kembla,-24.4002,150.5133
+NSW_TP026,Port Macquarie,NSW,nsw-port-macquarie,-19.1744,146.5503
+NSW_TP015,Port Stephens,NSW,nsw-port-stephens,-18.2642,146.0258
+NSW_TP022,Princess Jetty,NSW,nsw-princess-jetty,-37.0833,144.267
+NSW_TP032,Sand Pt (Pittwater),NSW,nsw-sand-pt-(pittwater),-31.4997,145.8319
+NSW_TP023,South West Rocks,NSW,nsw-south-west-rocks,-31.8317,149.7178
+NSW_TP024,Swansea,NSW,nsw-swansea,-27.3919,152.5022
+NSW_TP007,Sydney (Fort Denison),NSW,nsw-sydney-(fort-denison),-38.4511,145.2419
+NSW_TP028,Tweed Heads,NSW,nsw-tweed-heads,-28.8317,153.5344
+NSW_TP025,Ulladulla Harbour,NSW,nsw-ulladulla-harbour,-32.015,149.3928
+NSW_TP008,Yamba,NSW,nsw-yamba,-33.6167,115.1
+VIC_TP014,Altona,VIC,vic-altona,-33.5567,150.8011
+VIC_TP038,Apollo Bay,VIC,vic-apollo-bay,-37.95,145.541
+VIC_TP015,Barracouta Platform,VIC,vic-barracouta-platform,-37.49,144.5889
+VIC_TP016,Barwon Heads,VIC,vic-barwon-heads,-37.5908,143.719
+VIC_TP017,Bouchier Channel,VIC,vic-bouchier-channel,-36.9167,144.7
+VIC_TP004,Corio Bay,VIC,vic-corio-bay,-34.3525,150.4917
+VIC_TP018,Cowes Jetty,VIC,vic-cowes-jetty,-35.5167,138.8667
+VIC_TP019,Elizabeth Island,VIC,vic-elizabeth-island,-35.715,147.3178
+VIC_TP020,Flinders Jetty,VIC,vic-flinders-jetty,-25.3167,152.567
+VIC_TP039,Gabo I.,VIC,vic-gabo-i,-36.6649,144.329
+VIC_TP005,Geelong,VIC,vic-geelong,-38.1381,144.71
+VIC_TP006,Hovell Pile,VIC,vic-hovell-pile,-17.5236,146.0292
+VIC_TP001,Lakes Entrance (Outer),VIC,vic-lakes-entrance-(outer),-29.7817,151.1178
+VIC_TP002,Lorne,VIC,vic-lorne,-34.2333,142.1667
+VIC_TP003,Melbourne (Williamstown),VIC,vic-melbourne-(williamstown),-12.6667,132.8333
+VIC_TP022,Mornington,VIC,vic-mornington,-33.2053,138.6019
+VIC_TP025,Port Fairy,VIC,vic-port-fairy,-16.6069,145.343
+VIC_TP041,Point Hicks,VIC,vic-point-hicks,-35.7167,143.9167
+VIC_TP009,Point Lonsdale,VIC,vic-point-lonsdale,-34.784,138.852
+VIC_TP023,Point Richards,VIC,vic-point-richards,-26.5333,151.8333
+VIC_TP024,Point Richards Channel,VIC,vic-point-richards-channel,-42.9769,147.3083
+VIC_TP010,Port Welshpool Pier,VIC,vic-port-welshpool-pier,-31.0567,151.0511
+VIC_TP011,Portland,VIC,vic-portland,-28.6167,153.0
+VIC_TP040,Port Campbell,VIC,vic-port-campbell,-33.2983,146.3678
+VIC_TP007,Queenscliff,VIC,vic-queenscliff,-37.8667,147.9833
+VIC_TP012,Rabbit Island,VIC,vic-rabbit-island,-38.0167,144.4167
+VIC_TP026,Rosebud Jetty,VIC,vic-rosebud-jetty,-38.4833,145.95
+VIC_TP029,San Remo,VIC,vic-san-remo,-38.1892,144.4644
+VIC_TP030,Sandringham,VIC,vic-sandringham,-37.9667,144.13299999999998
+VIC_TP027,St Kilda,VIC,vic-st-kilda,-33.4833,150.15
+VIC_TP028,St Leonards,VIC,vic-st-leonards,-35.215,146.7178
+VIC_TP033,Tooradin,VIC,vic-tooradin,-38.1,145.767
+VIC_TP044,Waratah Bay,VIC,vic-waratah-bay,-27.4667,152.5833
+VIC_TP047,Warrnambool,VIC,vic-warrnambool,-36.8983,149.9011
+VIC_TP034,Werribee,VIC,vic-werribee,-16.4603,145.3733
