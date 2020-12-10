@@ -165,7 +165,7 @@ response = requests.get(
 
 # Do something with response data.
 ############################################################################################# weather
-# weather_data = response.json()
+weather_data = response.json()
 
 
 weather_meta = weather_data['meta']
@@ -204,7 +204,7 @@ response = requests.get(
 
 # Do something with response data.
 ############################################################################################# extremeTide
-# extremeTide_data_all = response.json()
+extremeTide_data_all = response.json()
 
 #extremeTide_data_all
 
