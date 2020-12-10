@@ -286,7 +286,7 @@ else:
     print("No available data for secondary swell for " + loc + "from stormglass API.")
     
 if("swellDirection.noaa" in df_weather):
-    df_weather.plot(kind='bar', y='swellDirection.noaa', x='hour', title='Swell Direction (0°north) at {loc} on {date}'.format(loc=loc, date=date))
+    df_weather.plot(kind='bar', y='swellDirection.noaa', x='hour', title='Swell Direction (0 degree north) at {loc} on {date}'.format(loc=loc, date=date))
     fig1 = plt.gcf()
     plt.show()
     fig1.savefig('swellDirection_{loc}_{date}.png'.format(loc=loc,date=date))
@@ -310,7 +310,7 @@ fig1.savefig('WindSpeed_{loc}_{date}.png'.format(loc=loc,date=date))
 
 #wind Direction and ??? over time of the day??
 
-df_weather.plot.box(y='windDirection.noaa', title='Wind Direction (0°north) at {loc} on {date}'.format(loc=loc, date=date),
+df_weather.plot.box(y='windDirection.noaa', title='Wind Direction (0 degree north) at {loc} on {date}'.format(loc=loc, date=date),
                     patch_artist=True, showmeans=True, 
                     boxprops = {'color':'black','facecolor':'#9999ff'}, 
                     flierprops = {'marker':'o','markerfacecolor':'red','color':'black'},
@@ -322,7 +322,7 @@ plt.yticks([24,48,72,96,120,144,168,192,216,240,264,288,312,336,360],
 
 #wind direction
 plt.plot(df_weather["windDirection.noaa"])
-plt.ylabel("Wind Direction (0°north)");
+plt.ylabel("Wind Direction (0 degree north)");
 plt.xlabel("time")
 plt.yticks([24,48,72,96,120,144,168,192,216,240,264,288,312,336,360],
            ["N","NNE","NE","ENE","E","ESE", "SE", "SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"])
